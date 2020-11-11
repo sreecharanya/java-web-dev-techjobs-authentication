@@ -3,9 +3,9 @@
 <head th:replace="fragments :: head"></head>
 <body class="container">
 
-<!-- header th:replace="fragments :: header"></header -->
+<header th:replace="fragments :: page-header"></header>
 
-<form method="post">
+<form method="post" class="extra-padding">
     <div class="form-group">
         <label>Username
             <input class="form-control" th:field="${registerFormDTO.username}" />
